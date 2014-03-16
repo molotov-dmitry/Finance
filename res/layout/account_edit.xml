@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:padding="20dp"
+              android:background="@color/bg_gray">
+
+    <Space android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="0.5"
+           android:id="@+id/space"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/acc_name"
+            android:gravity="bottom"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/acc_ed_name" android:inputType="textCapSentences"/>
+    <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/acc_balance"
+            android:gravity="bottom"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/acc_ed_balance" android:numeric="signed|decimal" android:layout_weight="5"
+                android:inputType="numberDecimal|numberSigned"/>
+        <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currency"
+                />
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                />
+    </LinearLayout>
+    <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:padding="0dp">
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:id="@+id/acc_btn_done" android:layout_weight="1" android:background="@drawable/button"
+                android:textColor="@android:color/white"/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/space1"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:id="@+id/acc_btn_cancel" android:layout_weight="1" android:background="@drawable/button"
+                android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

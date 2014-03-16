@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Finance</string>
+    <string name="tab_info_str">Инфо</string>
+    <string name="tab_out_str">Расходы</string>
+    <string name="tab_in_str">Доходы</string>
+    <string name="tab_acc_str">Счета</string>
+    <string name="acc_row_confirm_del">Удалить счет?</string>
+    <string name="flow_row_confirm_del">Удалить?</string>
+    <string name="accounts">Счета</string>
+    <string name="flows">Денежные потоки</string>
+    <string name="done">Готово</string>
+    <string name="cancel">Отменить</string>
+    <string name="acc_name">Имя счета</string>
+    <string name="acc_balance">Баланс</string>
+    <string name="currency">Руб.</string>
+    <string name="error">Error</string>
+    <string name="flow_amount">Сумма:</string>
+    <string name="date">Дата:</string>
+    <string name="name">Название:</string>
+    <string name="account">Счет:</string>
+    <string name="balance">Баланс:</string>
+    <string name="month_inflow">Доходы за месяц:</string>
+    <string name="month_outflow">Расходы за месяц:</string>
+    <string name="month_profit">Прибыль за месяц:</string>
+    <string name="month_loss">Убыток за месяц:</string>
+    <string name="add">Добавить</string>
+</resources>

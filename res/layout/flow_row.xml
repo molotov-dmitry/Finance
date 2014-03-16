@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@drawable/round_rect_shape"
+        android:padding="10dp">
+    <TextView android:layout_height="wrap_content"
+              android:layout_width="fill_parent" android:id="@+id/flowDate"
+              android:text="Дата" android:typeface="sans" android:textSize="16sp" android:textStyle="bold"></TextView>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:padding="5dp">
+        <TextView android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/flowName"
+                  android:text="Название" android:typeface="sans" android:textSize="14sp" android:textStyle="italic"
+                  android:layout_weight="2"/>
+        <TextView android:layout_height="wrap_content" android:layout_width="0dp" android:id="@+id/flowAccount"
+                  android:text="Группа" android:typeface="sans" android:textSize="14sp" android:textStyle="italic"
+                  android:layout_weight="1" android:gravity="right"/>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent" android:padding="5dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="0.00 руб."
+                  android:id="@+id/flowAmount" android:textSize="13sp"
+                  android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+                  android:textIsSelectable="false" android:paddingLeft="20dp">
+        </TextView>
+        <ImageButton android:layout_width="30dp"
+                     android:id="@+id/flowEdit"
+                     android:layout_toLeftOf="@+id/flowSpace"
+                     android:layout_centerVertical="true"
+                     android:src="@android:drawable/ic_menu_edit"
+                     android:scaleType="fitXY" android:background="@drawable/btn_img"
+                     android:layout_height="30dp">
+        </ImageButton>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:id="@+id/flowSpace"
+                android:layout_toLeftOf="@+id/flowRemove"
+                android:layout_centerVertical="true"/>
+        <ImageButton android:layout_width="30dp"
+                     android:id="@+id/flowRemove"
+                     android:layout_height="30dp"
+                     android:layout_alignParentLeft="false"
+                     android:layout_alignParentTop="false"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                     android:src="@android:drawable/ic_menu_delete"
+                     android:scaleType="fitXY" android:background="@drawable/btn_img">
+        </ImageButton>
+    </RelativeLayout>
+
+</LinearLayout>

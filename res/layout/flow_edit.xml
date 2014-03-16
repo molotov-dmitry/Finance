@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:padding="20dp" android:background="@color/bg_gray">
+
+    <Space
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="05.06.1992"
+                android:id="@+id/flow_ed_date_label" android:layout_weight="1" android:inputType="date"
+                android:gravity="center_horizontal" android:editable="false" android:enabled="true"
+                android:focusable="false"/>
+        <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                />
+        <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/flow_ed_date_btn" android:src="@android:drawable/ic_menu_today"
+                android:scaleType="fitXY" android:adjustViewBounds="false" android:background="@drawable/btn_img"/>
+        <Space android:layout_width="20dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="0dp"
+           android:layout_weight="1"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flow_amount"
+            />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:id="@+id/flow_ed_amount" android:layout_weight="1" android:numeric="decimal"
+                android:inputType="numberDecimal"/>
+        <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currency"
+                />
+        <Space android:layout_width="20dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <Space android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            />
+    <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/flow_ed_account" android:spinnerMode="dialog" android:popupBackground="@drawable/bg_res"
+            android:prompt="@string/account"/>
+    <Space android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            />
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/flow_ed_name"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:id="@+id/flow_btn_done" android:layout_weight="1" android:textColor="@android:color/white"
+                android:background="@drawable/button"/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/space"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:id="@+id/flow_btn_cancel" android:layout_weight="1" android:textColor="@android:color/white"
+                android:background="@drawable/button"/>
+    </LinearLayout>
+</LinearLayout>

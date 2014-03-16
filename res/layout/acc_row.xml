@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="10dp" android:background="@drawable/round_rect_shape">
+    <TextView android:layout_height="wrap_content"
+              android:layout_width="fill_parent" android:id="@+id/accName"
+              android:text="Счет" android:typeface="sans" android:textSize="16sp" android:textStyle="bold"></TextView>
+    <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:text="0.00 руб."
+                  android:id="@+id/accBalance" android:textSize="13sp"
+                  android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+                  android:paddingLeft="20dp" android:textIsSelectable="false">
+        </TextView>
+        <ImageButton android:layout_width="30dp"
+                     android:id="@+id/accEdit"
+                     android:layout_height="30dp"
+                     android:layout_toLeftOf="@+id/accSpace"
+                     android:layout_centerVertical="true"
+                     android:src="@android:drawable/ic_menu_edit"
+                     android:scaleType="fitXY" android:background="@drawable/btn_img">
+        </ImageButton>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:id="@+id/accSpace"
+                android:layout_toLeftOf="@+id/accRemove"
+                android:layout_centerVertical="true"/>
+        <ImageButton android:layout_width="30dp"
+                     android:id="@+id/accRemove"
+                     android:layout_height="30dp"
+                     android:layout_alignParentLeft="false"
+                     android:layout_alignParentTop="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                     android:src="@android:drawable/ic_menu_delete"
+                     android:scaleType="fitXY"
+                     android:layout_alignParentBottom="false" android:background="@drawable/btn_img">
+        </ImageButton>
+    </RelativeLayout>
+
+</LinearLayout>

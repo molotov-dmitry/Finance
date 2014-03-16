@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="TAG_ACC_ENTRY"/>
+    <item type="id" name="TAG_ACC_POSITION"/>
+    <item type="id" name="TAG_ACC_BTNTYPE"/>
+
+    <item type="id" name="TAG_FLOW_ENTRY"/>
+    <item type="id" name="TAG_FLOW_POSITION"/>
+    <item type="id" name="TAG_FLOW_BTNTYPE"/>
+
+    <item type="id" name="BTN_ACC_REMOVE"/>
+    <item type="id" name="BTN_ACC_EDIT"/>
+
+    <item type="id" name="BTN_FLOW_REMOVE"/>
+    <item type="id" name="BTN_FLOW_EDIT"/>
+
+    <item type="id" name="REQUEST_NEW_ACCOUNT"/>
+    <item type="id" name="REQUEST_EDIT_ACCOUNT"/>
+
+    <item type="id" name="REQUEST_NEW_FLOW"/>
+    <item type="id" name="REQUEST_EDIT_FLOW"/>
+
+    <item type="id" name="CREATE_DATE_DIALOG"/>
+</resources>
